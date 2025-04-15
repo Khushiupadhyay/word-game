@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrabble Game</title>
+    <link rel="stylesheet" href="scrabble.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="index.html" class="back-button">← Back</a>
+    <div class="game-container">
+        <!-- Left Side - Word Grid -->
+        <div class="game-left">
+            <div class="grid-container">
+                <div class="word-grid">
+                    <!-- Grid will be populated by JavaScript -->
+                </div>
+                <div class="arrow-controls">
+                    <button class="arrow-btn left-arrow">←</button>
+                    <button class="arrow-btn right-arrow">→</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side - Game Controls -->
+        <div class="game-right">
+            <!-- Question Display -->
+            <div class="category-box">
+                <span class="category-text">Question 1) Find all possible words!</span>
+            </div>
+
+            <!-- Found Words Section -->
+            <div class="found-words-section">
+                <h2>Found Words</h2>
+                <div class="found-words-list">
+                    <!-- Found words will be added here -->
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button class="control-btn check-word">Check Word</button>
+                <button class="control-btn next-level" style="display: none;">Next Level</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <h2 class="modal-title"></h2>
+            <button class="modal-button">Continue</button>
+        </div>
+    </div>
+
+    <script src="scrabble.js"></script>
+</body>
+</html> 

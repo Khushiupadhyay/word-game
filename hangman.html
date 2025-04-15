@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="hangman.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="index.html" class="back-button">← Back</a>
+    <div class="game-container">
+        <!-- Left Side - Hangman -->
+        <div class="game-left">
+            <div class="hangman-container">
+                <canvas id="hangmanCanvas" width="400" height="500"></canvas>
+            </div>
+        </div>
+
+        <!-- Right Side - Game Controls -->
+        <div class="game-right">
+            <!-- Category Display -->
+            <div class="category-box">
+                <span class="category-text">Question 1) Insect</span>
+            </div>
+
+            <!-- Word Display -->
+            <div class="word-display">
+                <div class="letter-spaces">
+                    <span class="letter-space"></span>
+                    <span class="letter-space"></span>
+                    <span class="letter-space"></span>
+                </div>
+            </div>
+
+            <!-- Keyboard -->
+            <div class="keyboard">
+                <div class="keyboard-row">
+                    <button class="key">Q</button>
+                    <button class="key">W</button>
+                    <button class="key">E</button>
+                    <button class="key">R</button>
+                    <button class="key">T</button>
+                    <button class="key">Y</button>
+                    <button class="key">U</button>
+                    <button class="key">I</button>
+                    <button class="key">O</button>
+                    <button class="key">P</button>
+                </div>
+                <div class="keyboard-row">
+                    <button class="key">A</button>
+                    <button class="key">S</button>
+                    <button class="key">D</button>
+                    <button class="key">F</button>
+                    <button class="key">G</button>
+                    <button class="key">H</button>
+                    <button class="key">J</button>
+                    <button class="key">K</button>
+                    <button class="key">L</button>
+                </div>
+                <div class="keyboard-row">
+                    <button class="key">Z</button>
+                    <button class="key">X</button>
+                    <button class="key">C</button>
+                    <button class="key">V</button>
+                    <button class="key">B</button>
+                    <button class="key">N</button>
+                    <button class="key">M</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Over Modal -->
+    <div class="modal" id="gameOverModal">
+        <div class="modal-content">
+            <h2 class="modal-title"></h2>
+            <button class="modal-button">Play Again</button>
+        </div>
+    </div>
+
+    <script src="hangman.js"></script>
+</body>
+</html> 

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Background Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+    <button class="menu-button">MENU</button>
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay">
+        <button class="menu-close" aria-label="Close menu"></button>
+        <div class="menu-left">
+            <img src="image.png" alt="Profile" class="profile-image">
+        </div>
+        <div class="menu-right">
+            <ul class="menu-button-list">
+                <li><button class="menu-btn">Play Hangman</button></li>
+                <li><button class="menu-btn">Play Scrabble</button></li>
+                <li><button class="menu-btn">Play Wordsearch</button></li>
+                <li><button class="menu-btn">Play Boggle</button></li>
+                <li><button class="menu-btn">Leaderboard</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="background">
+        <div class="content">
+            <h1 class="main-title">WORDFALL</h1>
+        </div>
+    </div>
+    <section class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2 class="about-title">
+                    Unleash the Power<br>
+                    of Words in<br>
+                    WORDFALL.
+                </h2>
+                <p class="about-description">
+                    WORDFALL is an exciting word puzzle game where every player becomes a master of vocabulary.
+                    Challenge yourself with falling letters, create words, and compete against time.
+                    Our unique gameplay mechanics ensure that every session is both entertaining and educational.
+                </p>
+                <p class="about-description">
+                    Whether you're a casual gamer or a word enthusiast, WORDFALL offers an engaging experience
+                    that grows with you. Join our community of word warriors today!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="games-section">
+        <div class="games-content">
+            <h2 class="games-title">GAMES</h2>
+            <div class="games">
+                <div class="games-list">
+                    <a href="boggle.html" class="game-link">BOGGLE</a>
+                    <a href="hangman.html" class="game-link">HANGMAN</a>
+                    <a href="scrabble.html" class="game-link">SCRABBLE</a>
+                    <a href="wordsearch.html" class="game-link">WORDSEARCH</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="game-details-section">
+        <div class="game-details-container">
+            <div class="placcard-wrapper">
+                <div class="placcard">
+                    <div class="placcard-content">
+                        <div class="placcard-left">
+                            <h3 class="game-detail-title">Boggle</h3>
+                            <span class="game-detail-number">01</span>
+                        </div>
+                        <div class="placcard-right">
+                            <div class="game-icons">
+                                <div class="game-icon">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTEyIDIxQzE2Ljk3MDYgMjEgMjEgMTYuOTcwNiAyMSAxMkMyMSA3LjAyOTQ0IDE2Ljk3MDYgMyAxMiAzQzcuMDI5NDQgMyAzIDcuMDI5NDQgMyAxMkMzIDE2Ljk3MDYgNy4wMjk0NCAyMSAxMiAyMVoiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIvPjwvc3ZnPg==" alt="Building Icon">
+                                </div>
+                            </div>
+                            <h4>Word Hunt Challenge</h4>
+                            <p>Find as many words as you can in a 4x4 grid of letters. Race against time and challenge your vocabulary!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="placcard">
+                    <div class="placcard-content">
+                        <div class="placcard-left">
+                            <h3 class="game-detail-title">Hangman</h3>
+                            <span class="game-detail-number">02</span>
+                        </div>
+                        <div class="placcard-right">
+                            <div class="game-icons">
+                                <div class="game-icon">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTEyIDIxQzE2Ljk3MDYgMjEgMjEgMTYuOTcwNiAyMSAxMkMyMSA3LjAyOTQ0IDE2Ljk3MDYgMyAxMiAzQzcuMDI5NDQgMyAzIDcuMDI5NDQgMyAxMkMzIDE2Ljk3MDYgNy4wMjk0NCAyMSAxMiAyMVoiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIvPjwvc3ZnPg==" alt="Building Icon">
+                                </div>
+                            </div>
+                            <h4>Classic Word Guessing</h4>
+                            <p>Guess the hidden word one letter at a time. Be careful - too many wrong guesses and it's game over!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="placcard">
+                    <div class="placcard-content">
+                        <div class="placcard-left">
+                            <h3 class="game-detail-title">Word Scramble</h3>
+                            <span class="game-detail-number">03</span>
+                        </div>
+                        <div class="placcard-right">
+                            <div class="game-icons">
+                                <div class="game-icon">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTEyIDIxQzE2Ljk3MDYgMjEgMjEgMTYuOTcwNiAyMSAxMkMyMSA3LjAyOTQ0IDE2Ljk3MDYgMyAxMiAzQzcuMDI5NDQgMyAzIDcuMDI5NDQgMyAxMkMzIDE2Ljk3MDYgNy4wMjk0NCAyMSAxMiAyMVoiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIvPjwvc3ZnPg==" alt="Building Icon">
+                                </div>
+                            </div>
+                            <h4>Unscramble the Words</h4>
+                            <p>Test your word skills by unscrambling jumbled letters to form meaningful words. Beat the clock!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="placcard">
+                    <div class="placcard-content">
+                        <div class="placcard-left">
+                            <h3 class="game-detail-title">Word Search</h3>
+                            <span class="game-detail-number">04</span>
+                        </div>
+                        <div class="placcard-right">
+                            <div class="game-icons">
+                                <div class="game-icon">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTEyIDIxQzE2Ljk3MDYgMjEgMjEgMTYuOTcwNiAyMSAxMkMyMSA3LjAyOTQ0IDE2Ljk3MDYgMyAxMiAzQzcuMDI5NDQgMyAzIDcuMDI5NDQgMyAxMkMzIDE2Ljk3MDYgNy4wMjk0NCAyMSAxMiAyMVoiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIvPjwvc3ZnPg==" alt="Building Icon">
+                                </div>
+                            </div>
+                            <h4>Hidden Word Discovery</h4>
+                            <p>Find hidden words in a grid of letters. Words can be horizontal, vertical, or diagonal!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html> 

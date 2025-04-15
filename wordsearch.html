@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Search Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="wordsearch.css">
+</head>
+<body>
+    <!-- Opening Screen -->
+    <div id="openingScreen" class="screen">
+        <div class="game-title">WORD SEARCH</div>
+        <div class="play-button">PLAY</div>
+    </div>
+
+    <!-- Category Selection Screen -->
+    <div id="categoryScreen" class="screen hidden">
+        <button class="back-button" onclick="window.location.href='index.html'">Back</button>
+        <div class="category-title">SELECT CATEGORY</div>
+        <div class="category-grid">
+            <div class="category-button" data-category="fruits">Fruits</div>
+            <div class="category-button" data-category="vegetables">Vegetables</div>
+            <div class="category-button" data-category="computer">Computer</div>
+            <div class="category-button" data-category="music">Music</div>
+            <div class="category-button" data-category="countries">Countries</div>
+            <div class="category-button" data-category="animals">Animals</div>
+        </div>
+    </div>
+
+    <!-- How to Play Screen -->
+    <div id="rulesScreen" class="screen hidden">
+        <div class="rules-title">HOW TO PLAY</div>
+        <div class="rules-content">
+            Search up, down, forward, backward, and on the diagonal to find the hidden words.
+        </div>
+        <div class="start-button">START</div>
+    </div>
+
+    <!-- Main Game Screen -->
+    <div id="gameScreen" class="screen hidden">
+        <div class="game-header">
+            <div class="timer">00:00:00</div>
+            <div class="control-buttons">
+                <button id="pauseButton" class="control-btn">⏸️</button>
+                <button id="exitButton" class="control-btn">❌</button>
+            </div>
+        </div>
+
+        <div class="word-list"></div>
+        
+        <div class="game-grid">
+            <canvas id="selectionCanvas"></canvas>
+            <div class="letter-grid"></div>
+        </div>
+    </div>
+
+    <!-- Exit Confirmation Modal -->
+    <div id="exitModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-title">Are you sure you want to exit?</div>
+            <div class="modal-buttons">
+                <button id="confirmExit">Yes</button>
+                <button id="cancelExit">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pause Modal -->
+    <div id="pauseModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-title">Game Paused</div>
+            <button id="resumeButton">Resume</button>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-title">Congratulations!</div>
+            <div class="modal-text">You found all the words!</div>
+            <button id="playAgainButton">Play Again</button>
+        </div>
+    </div>
+
+    <script src="wordsearch.js"></script>
+</body>
+</html> 
